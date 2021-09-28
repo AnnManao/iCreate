@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCreate</title>
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+</head>
+<body>
+    <div class="flex flex-col w-screen h-auto bg-[#F6C037] justify-center items-center">
+        <!-- nav bar -->
+        <nav class="bg-[#F6C037] h-18 lg:h-20 md:w-screen items-center flex justify-between border-b-2">
+            <img src="img/logo.png" class="w-auto h-12 lg:h-16" alt="Company Logo">
+            <div class="flex flex-row flex-wrap invisible pr-20 lg:space-x-20 lg:visible pro:hidden">
+                <a href="#" class="uppercase font-bold font-montserrat text-md text-black hover:text-[#F0D44F] focus:outline-none">SERVICES</a>
+                <a href="#" class="uppercase font-bold text-md text-black hover:text-[#F0D44F] focus:outline-none">PORTFOLIO</a>
+                <a href="#" class="uppercase font-bold text-md text-black hover:text-[#F0D44F] focus:outline-none">CONTACT</a>
+            </div>
+            <div class="block lg:space-x-20 lg:hidden pro:block pro:pr-10">
+                <button type="button" class="text-black text-xl focus:text-text-[#F0D44F] active:hover:text text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+
+        <!-- nav bar for small devices -->
+        <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2 bg-[#F6C037]">
+            <div class="bg-[#07193A] w-full flex flex-col items-center justify-start rounded-xl border shadow-xl p-6">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="img/logo.png" class="w-auto h-16" alt="Company Logo">
+                    <button type="button" class="text-white text-xl focus:text-[#22488D] active:hover:text-[#22488D] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                    <a href="#" class="uppercase font-montserrat text-md text-black hover:text-[#F0D44F] focus:outline-none">SERVICES</a>
+                    <a href="#" class="uppercase text-md text-black hover:text-[#F0D44F] focus:outline-none">PORTFOLIO</a>
+                    <a href="#" class="uppercase text-md text-black hover:text-[#F0D44F] focus:outline-none">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Creating -->
+        <div class="flex flex-col w-screen h-auto bg-cover items-center justify-center " style="background-image: url('img/page2_bg.jpg');">
+            <p class="text-white lg:text-6xl text-3xl font-poppins text-center pt-32 font-bold tracking-wider">Creating Change</p>
+            <div class="flex lg:w-2/5 w-screen items-center justify-center p-14 mt-10 mb-32">
+                <p class="leading-loose text-white lg:text-lg text-xs font-poppins font-bold text-center break-words">iCreate Entertainment Inc. is a multi-production company that specializes in creating engaging content with high quality production value. We take pride in providing our clients with professional and creative solutions that fits their live streaming needs.</p>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="w-screen h-auto bg-cover items-center justify-center gap-4" style="background-image: url('img/bgbg.jpg');">
+            <p class="text-white lg:text-6xl text-3xl font-semibold text-center p-16">CLIENT FOCUSED</p>
+            <div class="pb-20 flex items-center justify-center px-10 md:px-32 lg:px-10 xl:px-32 pt-2">
+                <ul class="lg:w-1/3 w-72 h-auto fade">
+                    <li>
+                        <div class="flex flex-col items-center justify-center lg:max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s1.jpeg"  class="w-full h-56 bg-center rounded-xl">
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center justify-center max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s2.jpeg"  class="w-full h-56 bg-center rounded-xl">   
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center justify-center max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s3.jpeg"  class="w-full h-56 bg-center rounded-xl">        
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center justify-center max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s1.jpeg"  class="w-full h-56 bg-center rounded-xl">
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center justify-center max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s2.jpeg"  class="w-full h-56 bg-center rounded-xl">   
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col items-center justify-center max-w-lg mx-3 border-2 border-white rounded-xl">
+                            <img src="img/s3.jpeg"  class="w-full h-56 bg-center rounded-xl">        
+                        </div>
+                        <div class="bg-gray-400 bg-opacity-50 w-auto p-2 lg:p-4 rounded-md">
+                            <p class="text-center lg:text-2xl text-sm font-semibold text-white">Our promise is to listen to what our clients want and need from our services, then deliver on that with professional efficienc. Building long and lasting relationship is what has always mattered to us.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="w-screen h-auto bg-black bg-cover">
+            <div class="flex flex-col justify-center ietms-center w-full p-2 border-t-2 border-solid lg:flex-row lg:justify-start lg:border-b-2">
+                <div class="flex items-center justify-center w-1/2 h-8 lg:h-10">
+                    <img src="img/logo.png" alt="Company Logo">
+                </div>
+
+                <div class="flex flex-col items-start gap-6 lg:pt-8 lg:pb-4 pt-10 lg:pb-20 pb-10 lg:border-r-2 pr-20 border-[#F6C037]">
+                    <p class="text-[#F6C037] font-bold text-3xl tracking-widest">SERVICES</p>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">LIVE STREAMING</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">2D & 3D GRAPHICS</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">VIDEO PRODUCTION <br> & EDITING</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">WEB DEVELOPMENT</a>
+                </div>
+                
+                <div class="flex items-center justify-center lg:w-11/12 p-4">
+                    <img src="img/MIC.png" class="w-auto h-auto" alt="SOUND">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script> 
+        $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+        });
+    </script>
+
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col w-screen h-auto bg-[#F6C037] justify-center items-center">
+        <!-- nav bar -->
+        <nav class="bg-[#F6C037] h-18 lg:h-20 w-screen items-center flex justify-between border-b-2">
+            <img src="img/logo.png" class="lg:h-16 h-12 w-auto" alt="Company Logo">
+            <div class="flex flex-row flex-wrap md:space-x-20 lg:visible invisible pro:hidden">
+                <a href="#" class="uppercase font-bold font-montserrat text-md text-black hover:text-[#F0D44F] focus:outline-none">SERVICES</a>
+                <a href="#" class="uppercase font-bold text-md text-black hover:text-[#F0D44F] focus:outline-none">PORTFOLIO</a>
+                <a href="#" class="uppercase font-bold text-md text-black hover:text-[#F0D44F] focus:outline-none">CONTACT</a>
+            </div>
+            <div class="md:space-x-20 lg:hidden block pro:block pro:pr-10">
+                <button type="button" class="text-black text-xl focus:text-text-[#F0D44F] active:hover:text text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- nav bar for small devices -->
+        <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2 bg-[#F6C037]">
+            <div class="bg-[#07193A] w-full flex flex-col items-center justify-start rounded-xl border shadow-xl p-6">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="img/logo.png" class="h-16 w-auto" alt="Company Logo">
+                    <button type="button" class="text-white text-xl focus:text-[#22488D] active:hover:text-[#22488D] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                    <a href="#" class="uppercase font-montserrat text-md text-black hover:text-[#F0D44F] focus:outline-none">SERVICES</a>
+                    <a href="#" class="uppercase text-md text-black hover:text-[#F0D44F] focus:outline-none">PORTFOLIO</a>
+                    <a href="#" class="uppercase text-md text-black hover:text-[#F0D44F] focus:outline-none">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center bg-cover w-screeen h-screen " style="background-image: url('img/bgggg.jpg');">
+            <div class="bg-[#F0D44F] bg-opacity-50 w-1/2 h-1/2 p-4 rounded-lg">
+                <p>CREATE WITH US!</p>
+                <p>For inquiries, complete this form and we will get back to you ASAP.</p>
+
+                
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="w-screen h-auto bg-black bg-cover">
+            <div class="flex flex-col justify-center ietms-center w-full p-2 border-t-2 border-solid lg:flex-row lg:justify-start lg:border-b-2">
+                <div class="flex items-center justify-center w-1/2 h-8 lg:h-10">
+                    <img src="img/logo.png" alt="Company Logo">
+                </div>
+
+                <div class="flex flex-col items-start gap-6 lg:pt-8 lg:pb-4 pt-10 lg:pb-20 pb-10 lg:border-r-2 pr-20 border-[#F6C037]">
+                    <p class="text-[#F6C037] font-bold text-3xl tracking-widest">SERVICES</p>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">LIVE STREAMING</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">2D & 3D GRAPHICS</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">VIDEO PRODUCTION <br> & EDITING</a>
+                    <a href="#" class="uppercase text-xs text-white hover:text-[#F0D44F] focus:outline-none">WEB DEVELOPMENT</a>
+                </div>
+                
+                <div class="flex items-center justify-center lg:w-11/12 p-4">
+                    <img src="img/MIC.png" class="w-auto h-auto" alt="SOUND">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>
